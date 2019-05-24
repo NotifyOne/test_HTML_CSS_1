@@ -1,0 +1,76 @@
+.section {
+    @include toCenter_page();
+    display: flex;
+    &-left {
+        margin-right: 2%;
+        color: $white;
+        width: 184px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-menu {
+            padding-top: 19px;
+            padding-left: 13px;
+            padding-bottom: 17px;
+            box-sizing: border-box;
+            width: 184px;
+            background-color: $main-color;
+            &-links {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                }
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &-central {
+        width: 757px;
+        color: #000;
+        
+
+        &--text {
+            background-color: $two-color;
+            padding: 21px;
+            box-sizing: border-box;
+            margin-bottom: 19px;
+        }
+        &--content {
+            display: flex;
+            flex-wrap: wrap;
+
+            &-block {
+                // background-color: $two-color;
+                margin: 0 0 15px 2%;
+                width: 18.4%;
+                
+                &:nth-child(5n) {
+                    margin-right: 0;
+                }
+                &:nth-child(1), &:nth-child(6n) {
+                    margin-left: 0;
+                }
+
+            }
+        }
+        &-bottom {
+            display: flex;
+            &--text {
+                width: 49%;
+                background-color: $two-color;
+                padding: 23px 32px 32px 18px;                
+                &-left {
+                    float: left;
+                    margin-right: 1%;
+                }
+                &-right {
+                    float: right;
+                    margin-left: 1%;
+                }
+            }
+        }
+    }
+}

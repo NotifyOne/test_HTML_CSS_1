@@ -1,0 +1,7 @@
+hr {
+    @include toCenter_page();
+    margin-top: 19px;
+    margin-bottom: 19px;
+    border-left: 0;
+    border-right: 0;
+}

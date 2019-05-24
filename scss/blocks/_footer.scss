@@ -1,0 +1,37 @@
+.footer {
+	@include toCenter_page();
+	display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+
+	&-block {
+        color: $white;
+		width: 32%;
+		background-color: $main-color;
+		margin: 0 0 0 2%;
+		&:nth-child(1) {
+			margin-left: 0;
+		}
+		&--ul {
+			&-items {
+				list-style: none;
+                columns: 2;
+            }
+            &-square {
+                list-style-type: square;
+            }
+		}
+    }
+    &-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 0 2%;
+
+        &--item {
+            width: 307px;
+            height: 80px;
+            background-color: $main-color;
+        }
+    }
+}
